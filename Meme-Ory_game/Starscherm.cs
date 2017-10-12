@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tulpep.NotificationWindow;
 
 namespace Startscherm
 {
@@ -16,10 +17,25 @@ namespace Startscherm
         {
             InitializeComponent();
         }
-
-        private void button_click(object sender, EventArgs e)
+        
+        private void rules_click(object sender, EventArgs e)
         {
-
+            Form2 spelregels = new Form2();
+            spelregels.ShowDialog();
         }
+
+        private void scores_click(object sender, EventArgs e)
+        {
+            Form3 highscores = new Form3();
+            highscores.ShowDialog();
+        }
+
+        private void start_click(object sender, EventArgs e)
+        {
+            Form4 memory = new Form4();
+            memory.ShowDialog();
+        }
+
+        
     }
 }

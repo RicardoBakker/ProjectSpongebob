@@ -43,7 +43,7 @@
             this.button.TabIndex = 0;
             this.button.Text = "Start";
             this.button.UseVisualStyleBackColor = false;
-            this.button.Click += new System.EventHandler(this.button_click);
+            this.button.Click += new System.EventHandler(this.start_click);
             // 
             // button2
             // 
@@ -55,7 +55,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Highscores";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button_click);
+            this.button2.Click += new System.EventHandler(this.scores_click);
             // 
             // button3
             // 
@@ -68,7 +68,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Spelregels";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button_click);
+            this.button3.Click += new System.EventHandler(this.rules_click);
             // 
             // Form1
             // 
@@ -80,6 +80,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button);
             this.Name = "Form1";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Startscherm";
             this.ResumeLayout(false);
 
