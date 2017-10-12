@@ -16,5 +16,10 @@ namespace Meme_Ory_Game
         {
             InitializeComponent();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,5 +28,10 @@ namespace Meme_Ory_Game
             Form3 settingsForm = new Form3();
             settingsForm.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
