@@ -19,22 +19,21 @@ namespace Meme_Ory_Game
             InitializeComponent();
         }
 
-
         private void Form2_Load(object sender, EventArgs e)
         {
-            int[] nummers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
-            int[] randomarray = random(nummers);
+            int[] nummers = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+            int[] randomarray = random(nummers);        // Running 'Random' method from below to fix position numbers
             
             int Row = 4;
             int Column = 4;
             tableLayoutPanel1.RowCount = Row;
             tableLayoutPanel1.ColumnCount = Column;
-            for (int i = 0; i < Row; i++)
+            for (int i = 0; i < 4; i++)         // Amount of cells, 4rows by 4columns
             {
                 tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
                 tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             }
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 16; i++)        // Amount of buttons, 4x4=16 here       
             {
                 var button = new Button();
                 button.Text = Convert.ToString(randomarray[i]);
@@ -44,7 +43,7 @@ namespace Meme_Ory_Game
                 button.Click += new System.EventHandler(button_Click);
             }            
         }
-        public static int[] random(int[] array)
+        public static int[] random(int[] array)         // Method to refill the 0,0 array with random non-duplicate numbers between from 1 to 16
         {
             var random = new Random();
 
