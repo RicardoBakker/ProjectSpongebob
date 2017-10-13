@@ -16,5 +16,22 @@ namespace Meme_Ory_Game
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 settingsForm = new Form2();
+            settingsForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 settingsForm = new Form3();
+            settingsForm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
