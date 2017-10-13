@@ -10,16 +10,22 @@ using System.Windows.Forms;
 
 namespace Meme_Ory_Game
 {
-    public partial class Form3 : Form
+    public partial class Form5 : Form
     {
-        public Form3()
+        public Form5()
         {
             InitializeComponent();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Form5_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 settingsForm = new Form2();       // Start button -> start memoryspel
+            settingsForm.Show();
         }
     }
 }
