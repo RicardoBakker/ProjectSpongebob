@@ -37,7 +37,7 @@ namespace Meme_Ory_Game
             {
                 var button = new Button();
                 button.Text = Convert.ToString(randomarray[i]);
-                button.Name = string.Format("Button_{0}", (randomarray[i]));
+                button.Name = Convert.ToString((randomarray[i]));
                 button.Dock = DockStyle.Fill;
                 tableLayoutPanel1.Controls.Add(button);
                 button.Click += new System.EventHandler(button_Click);
@@ -50,9 +50,29 @@ namespace Meme_Ory_Game
             int[] randomArray = Enumerable.Range(1, array.Length).OrderBy(x => random.Next()).ToArray();
             return randomArray;
         }
-        private void button_Click(object sender, EventArgs e)
+
+        private void button_Click(object sender, EventArgs e)       // Way to flip cards based on their #Name
         {
-            throw new NotImplementedException();
-        }
+            string ButtonName;
+            Button button = sender as Button;
+            ButtonName =button.Name;
+            
+            if (ButtonName=="1"||ButtonName=="2")
+                label1.Text = "een"; 
+            if (ButtonName == "3" || ButtonName == "4")
+                label1.Text = "twee";
+            if (ButtonName == "5" || ButtonName == "6")
+                label1.Text = "drie";
+            if (ButtonName == "7" || ButtonName == "8")
+                label1.Text = "vier";
+            if (ButtonName == "9" || ButtonName == "10")
+                label1.Text = "vijf";
+            if (ButtonName == "11" || ButtonName == "12")
+                label1.Text = "zes";
+            if (ButtonName == "13" || ButtonName == "14")
+                label1.Text = "zeven";
+            if (ButtonName == "15" || ButtonName == "16")
+                label1.Text = "acht";
+        } 
     }
 }
