@@ -55,7 +55,7 @@
             this.ClientSize = new System.Drawing.Size(570, 519);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "MemorySpel";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 

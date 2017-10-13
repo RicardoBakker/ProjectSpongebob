@@ -19,13 +19,19 @@ namespace Meme_Ory_Game
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 settingsForm = new Form2();
+            Form5 settingsForm = new Form5();       // Opens "naaminvoer, na naaminvoer Memoryspel"
             settingsForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 settingsForm = new Form3();
+            Form3 settingsForm = new Form3();       // Opens "spelregels"
+            settingsForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 settingsForm = new Form4();       // Opens "highscores"
             settingsForm.Show();
         }
 
@@ -33,5 +39,7 @@ namespace Meme_Ory_Game
         {
 
         }
+
+        
     }
 }

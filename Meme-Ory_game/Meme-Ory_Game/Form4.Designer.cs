@@ -1,6 +1,6 @@
 ﻿namespace Meme_Ory_Game
 {
-    partial class Form3
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form3
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 447);
-            this.Name = "Form3";
-            this.Text = "Spelregels";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.ClientSize = new System.Drawing.Size(465, 448);
+            this.Name = "Form4";
+            this.Text = "Highscores";
             this.ResumeLayout(false);
 
         }
