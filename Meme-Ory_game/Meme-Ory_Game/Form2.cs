@@ -61,6 +61,7 @@ namespace Meme_Ory_Game
         }
         public static Image KrijgImage(int nummer)
         {
+            
             switch (nummer)
             {
                 //elke knop krijgt andere image. button_1 en button_2 = paar etc...
