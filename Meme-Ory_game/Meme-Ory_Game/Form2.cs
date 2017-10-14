@@ -21,19 +21,19 @@ namespace Meme_Ory_Game
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            int[] nummers = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-            int[] randomarray = random(nummers);        // Running 'Random' method from below to fix position numbers
-            
-            int Row = 4;
-            int Column = 4;
+            int[] numberCards = new int[40];        // Atm 6x6, manier zoeken om dit te maken zodat gebruiker kiest hoe groot het speelveld is
+            int[] randomarray = random(numberCards);        // Running 'Random' method from below to fix position numbers
+
+            int Row = Convert.ToInt16(Math.Sqrt(numberCards.Length));
+            int Column = Convert.ToInt16(Math.Sqrt(numberCards.Length));
             tableLayoutPanel1.RowCount = Row;
             tableLayoutPanel1.ColumnCount = Column;
-            for (int i = 0; i < 4; i++)         // Amount of cells, 4rows by 4columns
+            for (int i = 0; i < (Row); i++)         // Amount of cells, 4rows by 4columns
             {
                 tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
                 tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             }
-            for (int i = 0; i < 16; i++)        // Amount of buttons, 4x4=16 here       
+            for (int i = 0; i < (Row*Column); i++)        // Amount of buttons      
             {
                 var button = new Button();
                 button.Text = Convert.ToString(randomarray[i]);
