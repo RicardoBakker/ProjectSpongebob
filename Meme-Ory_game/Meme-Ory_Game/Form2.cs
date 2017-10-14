@@ -22,8 +22,8 @@ namespace Meme_Ory_Game
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            int[] nummers = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-            int[] randomarray = random(nummers);        // Running 'Random' method from below to fix position numbers
+            int numberCards = 16; // deze variable moet door user ingevoerd kunnen worden uiteindelijk om grootte te kunnen veranderen (vanuit ComboBox?)
+            int[] randomarray = random(numberCards);        // Running 'Random' method from below to fix position numbers
             
             int Row = 4;
             int Column = 4;
@@ -39,36 +39,30 @@ namespace Meme_Ory_Game
                 var button = new Button();
                 //button.Text kan weg bij oplevering, is alleen voor duidelijkheid bij programmeren
                 button.Text = Convert.ToString(randomarray[i]);
-                button.Name = string.Format("Button_{0}", (randomarray[i]));
+                button.Name = Convert.ToString(randomarray[i]);
                 button.Dock = DockStyle.Fill;
                 tableLayoutPanel1.Controls.Add(button);
                 button.Click += new System.EventHandler(button_Click);
             }
         }
-        public static int[] random(int[] array)         // Method to refill the 0,0 array with random non-duplicate numbers between from 1 to 16
-        {
-            var random = new Random();
-
-            int[] randomArray = Enumerable.Range(1, array.Length).OrderBy(x => random.Next()).ToArray();
-            return randomArray;
-        }
+        
         private void button_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;
-            int nummer = Convert.ToInt32(clickedButton.Text);
-            clickedButton.BackgroundImage = KrijgImage(nummer);
+            int nummer = Convert.ToInt32(clickedButton.Name);
+            clickedButton.BackgroundImage = KrijgImage(nummer); //nummer = naam van button = het nummer uit de random array.
             clickedButton.BackgroundImageLayout = ImageLayout.Stretch;
-
         }
-        public static Image KrijgImage(int nummer)
+        public static Image KrijgImage(int nummer) //Method voor de BackgroundImage
         {
             
             switch (nummer)
             {
                 //elk paar krijgt dezelfde achtergrond via button_Click
+                //moet langer worden voor grotere spellen dan 4x4
                 case 1:
                 case 2:
-                    Image image1 = Properties.Resources.image_2;
+                    Image image1 = Properties.Resources.image_1;
                     return image1;
                 case 3:
                 case 4:
@@ -104,6 +98,12 @@ namespace Meme_Ory_Game
             }
             
             }
+        public static int[] random(int aantal)         // Method die een array maakt voor aantal als lengte
+        {
+            var random = new Random();
+            int[] randomArray = Enumerable.Range(1, aantal).OrderBy(x => random.Next()).ToArray();
+            return randomArray;
+        }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
         }
