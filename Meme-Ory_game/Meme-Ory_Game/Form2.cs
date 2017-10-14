@@ -92,6 +92,39 @@ namespace Meme_Ory_Game
                 case 16:
                     Image image8 = Properties.Resources.image_8;
                     return image8;
+                case 17:
+                case 18:
+                    Image image9 = Properties.Resources.image_9;
+                    return image9;
+                case 19:
+                case 20:
+                    Image image10 = Properties.Resources.image_10;
+                    return image10;
+                case 21:
+                case 22:
+                    Image image11 = Properties.Resources.image_11;
+                    return image11;
+                case 23:
+                case 24:
+                    Image image12 = Properties.Resources.image_12;
+                    return image12;
+                case 25:
+                case 26:
+                    Image image13 = Properties.Resources.image_13;
+                    return image13;
+                case 27:
+                case 28:
+                    Image image14 = Properties.Resources.image_14;
+                    return image14;
+                case 29:
+                case 30:
+                    Image image15 = Properties.Resources.image_15;
+                    return image15;
+                case 31:
+                case 32:
+                    Image image16 = Properties.Resources.image_16;
+                    return image16;
+
                 default:
                     Image dickbutt = null;
                     return dickbutt;

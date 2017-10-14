@@ -166,5 +166,29 @@
   <ItemGroup>
     <None Include="Resources\d051.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s04.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s05.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s07.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s08.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s03.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s06.bmp" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
