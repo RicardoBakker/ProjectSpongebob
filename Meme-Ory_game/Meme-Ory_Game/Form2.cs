@@ -22,19 +22,19 @@ namespace Meme_Ory_Game
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            int numberCards = 16; // deze variable moet door user ingevoerd kunnen worden uiteindelijk om grootte te kunnen veranderen (vanuit ComboBox?)
-            int[] randomarray = random(numberCards);        // Running 'Random' method from below to fix position numbers
+            double numberCards = 16; //Alles afhankelijk van deze waarde. deze variable moet door user ingevoerd kunnen worden uiteindelijk om grootte te kunnen veranderen (vanuit ComboBox?)
+            int[] randomarray = random(Convert.ToInt32(numberCards));        // Running 'Random' method from below to fix position numbers
             
-            int Row = 4;
-            int Column = 4;
-            tableLayoutPanel1.RowCount = Row;
-            tableLayoutPanel1.ColumnCount = Column;
-            for (int i = 0; i < 4; i++)         // Amount of cells, 4rows by 4columns
+            double Row = Math.Sqrt(numberCards);
+            double Column = Math.Sqrt(numberCards);
+            tableLayoutPanel1.RowCount = Convert.ToInt32(Row);
+            tableLayoutPanel1.ColumnCount = Convert.ToInt32(Column);
+            for (int i = 0; i < Row; i++)         // Amount of cells, 4rows by 4columns
             {
                 tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
                 tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             }
-            for (int i = 0; i < 16; i++)        // Amount of buttons, 4x4=16 here       
+            for (int i = 0; i < numberCards; i++)        // Amount of buttons, 4x4=16 here       
             {
                 var button = new Button();
                 //button.Text kan weg bij oplevering, is alleen voor duidelijkheid bij programmeren
