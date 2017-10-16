@@ -18,7 +18,6 @@ namespace Meme_Ory_Game
         {
             InitializeComponent();
         }
-    
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -30,6 +29,7 @@ namespace Meme_Ory_Game
             tableLayoutPanel1.RowCount = Convert.ToInt32(Row);
             tableLayoutPanel1.ColumnCount = Convert.ToInt32(Column);
             for (int i = 0; i < Row; i++)         // Amount of cells, 4rows by 4columns
+        
             {
                 tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
                 tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -138,7 +138,7 @@ namespace Meme_Ory_Game
             return randomArray;
         }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
+        
+
     }
 }

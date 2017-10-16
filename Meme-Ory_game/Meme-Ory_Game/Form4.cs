@@ -17,9 +17,5 @@ namespace Meme_Ory_Game
             InitializeComponent();
         }
 
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

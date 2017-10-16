@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -62,6 +64,7 @@
             this.ClientSize = new System.Drawing.Size(334, 378);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
+
             this.Name = "Form2";
             this.Text = "MemorySpel";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -73,5 +76,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+
     }
 }
