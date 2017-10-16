@@ -100,7 +100,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,81 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Image_1.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d01.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d02.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d03.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d04.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d05.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d06.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d07.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d08.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d011.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d021.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d031.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d041.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d061.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d071.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d081.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d051.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s04.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s05.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s07.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s08.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s01.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s02.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s03.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\s06.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
