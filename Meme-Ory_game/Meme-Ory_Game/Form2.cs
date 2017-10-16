@@ -21,7 +21,7 @@ namespace Meme_Ory_Game
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            int[] numberCards = new int[16];        // Atm 6x6, manier zoeken om dit te maken zodat gebruiker kiest hoe groot het speelveld is
+            int[] numberCards = new int[64];        // Atm 6x6, manier zoeken om dit te maken zodat gebruiker kiest hoe groot het speelveld is
             int[] randomarray = random(numberCards);        // Running 'Random' method from below to fix position numbers
 
             int Row = Convert.ToInt16(Math.Sqrt(numberCards.Length));
@@ -35,7 +35,7 @@ namespace Meme_Ory_Game
             }
             for (int i = 0; i < (Row*Column); i++)        // Amount of buttons      
             {
-                var button = new PictureBox();
+                var button = new Button();
                 button.Text = Convert.ToString(randomarray[i]);
                 button.Name = Convert.ToString((randomarray[i]));
                 button.Dock = DockStyle.Fill;
@@ -54,7 +54,7 @@ namespace Meme_Ory_Game
         private void button_Click(object sender, EventArgs e)       // Way to flip cards based on their #Name
         {
             string ButtonName;
-            PictureBox button = sender as PictureBox;
+            Button button = sender as Button;
             ButtonName =button.Name;
             
             if (ButtonName=="1"||ButtonName=="2")
